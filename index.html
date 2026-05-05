@@ -1,224 +1,314 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaneshk | Data Analyst Portfolio</title>
+  <html lang="en" class="scroll-smooth">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Kaneshk | Data Analyst Portfolio</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#4f46e5',
-                        darkBg: '#0f172a',
-                        darkCard: '#1e293b',
-                    }
-                }
-            }
-        }
-    </script>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+          tailwind.config = {
+              darkMode: 'class',
+              theme: {
+                  extend: {
+                      colors: {
+                          primary: '#4f46e5',
+                          darkBg: '#0f172a',
+                          darkCard: '#1e293b',
+                      }
+                  }
+              }
+          }
+      </script>
 
-    <link rel="stylesheet" href="styles.css">
-</head>
+      <link rel="stylesheet" href="styles.css">
+  </head>
 
-<body class="bg-slate-50 text-slate-900 dark:bg-darkBg dark:text-slate-100 transition-colors duration-300">
+  <body class="bg-slate-50 text-slate-900 dark:bg-darkBg dark:text-slate-100 transition-colors duration-300">
 
-<!-- NAV -->
-<nav class="fixed w-full z-50 backdrop-blur-md bg-white/70 dark:bg-darkBg/70 border-b">
-    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <span class="text-xl font-bold text-primary">Kaneshk.</span>
+  <!-- NAV -->
+  <nav class="fixed w-full z-50 backdrop-blur-md bg-white/70 dark:bg-darkBg/70 border-b">
+      <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+          <span class="text-xl font-bold text-primary">Kaneshk.</span>
 
-        <div class="flex items-center gap-6">
-            <div class="hidden md:flex gap-6 font-medium">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="#contact">Contact</a>
-            </div>
+          <div class="flex items-center gap-6">
+              <div class="hidden md:flex gap-6 font-medium">
+                  <a href="#about" class="hover:text-primary transition">About</a>
+                  <a href="#skills" class="hover:text-primary transition">Skills</a>
+                  <a href="#projects" class="hover:text-primary transition">Projects</a>
+                  <a href="#experience" class="hover:text-primary transition">Experience</a>
+                  <a href="#contact" class="hover:text-primary transition">Contact</a>
+              </div>
 
-            <button id="theme-toggle" class="p-2 rounded bg-slate-200 dark:bg-slate-700">
-                <span id="theme-icon">🌙</span>
-            </button>
-        </div>
-    </div>
-</nav>
+              <button id="theme-toggle" class="p-2 rounded bg-slate-200 dark:bg-slate-700">
+                  <span id="theme-icon">🌙</span>
+              </button>
+          </div>
+      </div>
+  </nav>
 
-<!-- HERO -->
-<section id="about" class="pt-32 pb-20 px-4">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+  <!-- HERO -->
+  <section id="about" class="pt-32 pb-20 px-4">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
 
-        <div class="flex-1">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-6">
-                Data Analyst | SQL · Power BI · Python
-            </h1>
+          <div class="flex-1">
+              <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                  Turning Complex Data into <span class="text-primary">Business Decisions</span>
+              </h1>
 
-            <p class="text-lg mb-6">
-                Transforming raw data into business-ready insights through end-to-end analytics — from data cleaning and modeling to KPI dashboards and visualization.
-            </p>
+              <p class="text-xl mb-6 font-medium">
+                  Data Analyst specializing in SQL, Power BI, and Python.
+              </p>
 
-            <p class="text-slate-600 dark:text-slate-400 mb-8">
-                Certified Data Analyst with hands-on experience across banking, insurance, startup, and job-market datasets. Skilled in SQL, Python, and Power BI to independently extract, analyze, and present data for decision-making.
-            </p>
+              <p class="text-slate-600 dark:text-slate-400 mb-8 text-lg">
+                  I help organizations reduce risk and uncover revenue opportunities by building automated KPI
+  dashboards and performing deep-dive analytical summaries. Certified Data Analyst with a proven track record of
+  transforming raw datasets into actionable strategic insights.
+              </p>
 
-            <a href="#projects" class="px-6 py-3 bg-primary text-white rounded">View Projects</a>
-        </div>
+              <div class="flex gap-4">
+                  <a href="#projects" class="px-6 py-3 bg-primary text-white rounded-lg font-semibold
+  hover:bg-indigo-700 transition shadow-lg shadow-primary/30">View My Work</a>
+                  <a href="#contact" class="px-6 py-3 border border-slate-300 dark:border-slate-700 rounded-lg
+  font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 transition">Get In Touch</a>
+              </div>
+          </div>
 
-        <div>
-            <img src="profile.jpg" class="w-64 h-64 rounded-full object-cover">
-        </div>
+          <div class="relative">
+              <div class="absolute -inset-1 bg-gradient-to-r from-primary to-indigo-400 rounded-full blur
+  opacity-30"></div>
+              <img src="profile.jpg" class="relative w-64 h-64 rounded-full object-cover border-4 border-white
+  dark:border-darkCard shadow-xl">
+          </div>
 
-    </div>
-</section>
+      </div>
+  </section>
 
-<!-- SKILLS -->
-<section id="skills" class="py-20 px-4 bg-slate-100 dark:bg-slate-800">
-    <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold mb-10 text-center">Technical Skills</h2>
+  <!-- SKILLS -->
+  <section id="skills" class="py-20 px-4 bg-slate-100 dark:bg-slate-800">
+      <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold mb-12 text-center">Core Competencies</h2>
 
-        <div class="grid md:grid-cols-2 gap-8">
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-            <div>
-                <h3 class="font-bold">Programming & Query</h3>
-                <p>SQL, Python (Pandas, NumPy, Matplotlib, Seaborn)</p>
-            </div>
+              <div class="p-6 bg-white dark:bg-darkCard rounded-xl shadow-sm border border-slate-200
+  dark:border-slate-700">
+                  <div class="text-primary text-2xl mb-3">💻</div>
+                  <h3 class="font-bold mb-2">Languages & Query</h3>
+                  <p class="text-slate-600 dark:text-slate-400 text-sm">Advanced SQL (MySQL, MS SQL Server), Python
+  (Pandas, NumPy, Matplotlib, Seaborn)</p>
+              </div>
 
-            <div>
-                <h3 class="font-bold">BI & Reporting</h3>
-                <p>Power BI, DAX, Power Query, Tableau</p>
-            </div>
+              <div class="p-6 bg-white dark:bg-darkCard rounded-xl shadow-sm border border-slate-200
+  dark:border-slate-700">
+                  <div class="text-primary text-2xl mb-3">📊</div>
+                  <h3 class="font-bold mb-2">BI & Visualization</h3>
+                  <p class="text-slate-600 dark:text-slate-400 text-sm">Power BI (DAX, Power Query), Tableau,
+  Interactive Dashboard Design</p>
+              </div>
 
-            <div>
-                <h3 class="font-bold">Data Analysis</h3>
-                <p>EDA, Data Cleaning, Transformation, KPI Analysis</p>
-            </div>
+              <div class="p-6 bg-white dark:bg-darkCard rounded-xl shadow-sm border border-slate-200
+  dark:border-slate-700">
+                  <div class="text-primary text-2xl mb-3">🔍</div>
+                  <h3 class="font-bold mb-2">Analytical Depth</h3>
+                  <p class="text-slate-600 dark:text-slate-400 text-sm">EDA, Data Cleaning, KPI Identification,
+  Statistical Analysis, Trend Forecasting</p>
+              </div>
 
-            <div>
-                <h3 class="font-bold">Data Engineering</h3>
-                <p>ETL Pipelines, Data Modeling, Orange Tool</p>
-            </div>
+              <div class="p-6 bg-white dark:bg-darkCard rounded-xl shadow-sm border border-slate-200
+  dark:border-slate-700">
+                  <div class="text-primary text-2xl mb-3">⚙️</div>
+                  <h3 class="font-bold mb-2">Data Engineering</h3>
+                  <p class="text-slate-600 dark:text-slate-400 text-sm">ETL Pipeline Development, Relational Data
+  Modeling, Data Transformation</p>
+              </div>
 
-        </div>
-    </div>
-</section>
+          </div>
+      </div>
+  </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="py-20 px-4">
-<div class="max-w-6xl mx-auto">
-<h2 class="text-3xl font-bold mb-10 text-center">Projects</h2>
+  <!-- PROJECTS -->
+  <section id="projects" class="py-20 px-4">
+      <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold mb-4 text-center">Featured Projects</h2>
+          <p class="text-center text-slate-600 dark:text-slate-400 mb-12 max-w-2xl mx-auto">
+              Solving real-world business problems through data extraction, modeling, and visualization.
+          </p>
 
-<div class="grid md:grid-cols-2 gap-8">
+          <div class="grid md:grid-cols-2 gap-8">
 
-  <!-- Bank Loan Analysis (add your repo when available) -->
-  <div class="p-6 bg-white dark:bg-darkCard text-slate-900 dark:text-slate-100 rounded shadow border border-slate-200 dark:border-slate-700">
-    <h3 class="font-bold text-slate-900 dark:text-white">Bank Loan Analysis</h3>
-    <p class="text-slate-600 dark:text-slate-300 mb-4">
-      Analyzed 38,576 loan records and generated 10+ KPIs using SQL. Built Power BI dashboards and performed risk analysis on $435M dataset.
-    </p>
-    <a href="https://github.com/KANESHK17/Bank_loan_Analysis"
-       target="_blank" rel="noopener noreferrer"
-       class="inline-block px-4 py-2 bg-primary text-white rounded hover:bg-indigo-700 transition">
-       View Code →
-    </a>
-  </div>
+              <!-- Bank Loan Analysis -->
+              <div class="group p-6 bg-white dark:bg-darkCard text-slate-900 dark:text-slate-100 rounded-2xl shadow-sm
+  border border-slate-200 dark:border-slate-700 hover:border-primary transition-all duration-300 hover:shadow-md">
+                  <h3 class="font-bold text-xl mb-3 group-hover:text-primary transition">Bank Loan Risk Analysis</h3>
+                  <p class="text-slate-600 dark:text-slate-300 mb-6">
+                      <span class="font-semibold text-slate-800 dark:text-slate-100">Problem:</span> High volume of loan
+   records needed visualization to identify risk patterns across 50 US states.<br>
+                      <span class="font-semibold text-slate-800 dark:text-slate-100">Action:</span> Engineered 10+ KPIs
+  using SQL and built a multi-page Power BI dashboard to track a $435M portfolio.<br>
+                      <span class="font-semibold text-slate-800 dark:text-slate-100">Result:</span> Created a real-time
+  risk monitoring system that identifies high-default regions instantly.
+                  </p>
+                  <a href="https://github.com/KANESHK17/Bank_loan_Analysis" target="_blank" rel="noopener noreferrer"
+                     class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg font-medium
+  hover:bg-indigo-700 transition">
+                     View Technical Case Study <span class="ml-2">→</span>
+                  </a>
+              </div>
 
-  <!-- Job Market Analysis -->
-  <div class="p-6 bg-white dark:bg-darkCard text-slate-900 dark:text-slate-100 rounded shadow border border-slate-200 dark:border-slate-700">
-    <h3 class="font-bold text-slate-900 dark:text-white">Job Market Analysis</h3>
-    <p class="text-slate-600 dark:text-slate-300 mb-4">
-      Analyzed 700,000+ job records to identify salary trends, skill demand, and regional insights using Python and Power BI.
-    </p>
-    <a href="https://github.com/KANESHK17/Data_Jobs_Salary_and_Market_Analysis"
-       target="_blank" rel="noopener noreferrer"
-       class="inline-block px-4 py-2 bg-primary text-white rounded hover:bg-indigo-700 transition">
-       View Code →
-    </a>
-  </div>
+              <!-- Job Market Analysis -->
+              <div class="group p-6 bg-white dark:bg-darkCard text-slate-900 dark:text-slate-100 rounded-2xl shadow-sm
+  border border-slate-200 dark:border-slate-700 hover:border-primary transition-all duration-300 hover:shadow-md">
+                  <h3 class="font-bold text-xl mb-3 group-hover:text-primary transition">Data Job Market
+  Intelligence</h3>
+                  <p class="text-slate-600 dark:text-slate-300 mb-6">
+                      <span class="font-semibold text-slate-800 dark:text-slate-100">Problem:</span> Difficulty in
+  identifying the most in-demand skills and salary trends across 700k+ job listings.<br>
+                      <span class="font-semibold text-slate-800 dark:text-slate-100">Action:</span> Used Python for
+  large-scale data cleaning and Power BI to map regional salary gaps and skill clusters.<br>
+                      <span class="font-semibold text-slate-800 dark:text-slate-100">Result:</span> Produced a
+  market-fit analysis identifying the top 5 critical skills for high-paying data roles.
+                  </p>
+                  <a href="https://github.com/KANESHK17/Data_Jobs_Salary_and_Market_Analysis" target="_blank"
+  rel="noopener noreferrer"
+                     class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg font-medium
+  hover:bg-indigo-700 transition">
+                     View Technical Case Study <span class="ml-2">→</span>
+                  </a>
+              </div>
 
-  <!-- Startup Profit Analysis -->
-  <div class="p-6 bg-white dark:bg-darkCard text-slate-900 dark:text-slate-100 rounded shadow border border-slate-200 dark:border-slate-700">
-    <h3 class="font-bold text-slate-900 dark:text-white">Startup Profit Analysis</h3>
-    <p class="text-slate-600 dark:text-slate-300 mb-4">
-      Built regression model with ~94% accuracy and analyzed startup ROI using SQL and Power BI dashboards.
-    </p>
-    <a href="https://github.com/KANESHK17/Startup_Profit_Analysis"
-       target="_blank" rel="noopener noreferrer"
-       class="inline-block px-4 py-2 bg-primary text-white rounded hover:bg-indigo-700 transition">
-       View Code →
-    </a>
-  </div>
+              <!-- Startup Profit Analysis -->
+              <div class="group p-6 bg-white dark:bg-darkCard text-slate-900 dark:text-slate-100 rounded-2xl shadow-sm
+  border border-slate-200 dark:border-slate-700 hover:border-primary transition-all duration-300 hover:shadow-md">
+                  <h3 class="font-bold text-xl mb-3 group-hover:text-primary transition">Startup ROI Prediction</h3>
+                  <p class="text-slate-600 dark:text-slate-300 mb-6">
+                      <span class="font-semibold text-slate-800 dark:text-slate-100">Problem:</span> High uncertainty in
+   predicting startup profitability based on funding and operational data.<br>
+                      <span class="font-semibold text-slate-800 dark:text-slate-100">Action:</span> Developed a
+  regression model with ~94% accuracy and integrated it with a Power BI dashboard for ROI tracking.<br>
+                      <span class="font-semibold text-slate-800 dark:text-slate-100">Result:</span> Enabled data-driven
+  prediction of startup success with high precision.
+                  </p>
+                  <a href="https://github.com/KANESHK17/Startup_Profit_Analysis" target="_blank" rel="noopener
+  noreferrer"
+                     class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg font-medium
+  hover:bg-indigo-700 transition">
+                     View Technical Case Study <span class="ml-2">→</span>
+                  </a>
+              </div>
 
-  <!-- Insurance Complaint Analysis -->
-  <div class="p-6 bg-white dark:bg-darkCard text-slate-900 dark:text-slate-100 rounded shadow border border-slate-200 dark:border-slate-700">
-    <h3 class="font-bold text-slate-900 dark:text-white">Insurance Complaint Analysis</h3>
-    <p class="text-slate-600 dark:text-slate-300 mb-4">
-      Analyzed insurer performance and complaint trends using SQL and built KPI dashboards.
-    </p>
-    <a href="https://github.com/KANESHK17/Automobile_Insurance_Analysis"
-       target="_blank" rel="noopener noreferrer"
-       class="inline-block px-4 py-2 bg-primary text-white rounded hover:bg-indigo-700 transition">
-       View Code →
-    </a>
-  </div>
+              <!-- Insurance Complaint Analysis -->
+              <div class="group p-6 bg-white dark:bg-darkCard text-slate-900 dark:text-slate-100 rounded-2xl shadow-sm
+  border border-slate-200 dark:border-slate-700 hover:border-primary transition-all duration-300 hover:shadow-md">
+                  <h3 class="font-bold text-xl mb-3 group-hover:text-primary transition">Insurance Performance
+  Audit</h3>
+                  <p class="text-slate-600 dark:text-slate-300 mb-6">
+                      <span class="font-semibold text-slate-800 dark:text-slate-100">Problem:</span> Need to identify
+  systemic failures in insurer performance based on consumer complaint trends.<br>
+                      <span class="font-semibold text-slate-800 dark:text-slate-100">Action:</span> Applied SQL for
+  complex data aggregation and designed KPI dashboards to track complaint spikes.<br>
+                      <span class="font-semibold text-slate-800 dark:text-slate-100">Result:</span> surfaced key
+  operational bottlenecks in the insurance claim process.
+                  </p>
+                  <a href="https://github.com/KANESHK17/Automobile_Insurance_Analysis" target="_blank" rel="noopener
+  noreferrer"
+                     class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg font-medium
+  hover:bg-indigo-700 transition">
+                     View Technical Case Study <span class="ml-2">→</span>
+                  </a>
+              </div>
 
-  <!-- BlinkIT Dashboard -->
-  <div class="p-6 bg-white dark:bg-darkCard text-slate-900 dark:text-slate-100 rounded shadow border border-slate-200 dark:border-slate-700">
-    <h3 class="font-bold text-slate-900 dark:text-white">BlinkIT Sales Dashboard</h3>
-    <p class="text-slate-600 dark:text-slate-300 mb-4">
-      Built ETL pipelines and dashboards to track revenue, orders, and product performance.
-    </p>
-    <a href="https://github.com/KANESHK17/BlinkIT_Power_BI_Dashboard"
-       target="_blank" rel="noopener noreferrer"
-       class="inline-block px-4 py-2 bg-primary text-white rounded hover:bg-indigo-700 transition">
-       View Code →
-    </a>
-  </div>
+              <!-- BlinkIT Dashboard -->
+              <div class="group p-6 bg-white dark:bg-darkCard text-slate-900 dark:text-slate-100 rounded-2xl shadow-sm
+  border border-slate-200 dark:border-slate-700 hover:border-primary transition-all duration-300 hover:shadow-md">
+                  <h3 class="font-bold text-xl mb-3 group-hover:text-primary transition">BlinkIT Operational
+  Dashboard</h3>
+                  <p class="text-slate-600 dark:text-slate-300 mb-6">
+                      <span class="font-semibold text-slate-800 dark:text-slate-100">Problem:</span> Lack of visibility
+  into product category performance and order volume growth.<br>
+                      <span class="font-semibold text-slate-800 dark:text-slate-100">Action:</span> Built full ETL
+  pipelines to clean sales data and developed high-impact dashboards for revenue tracking.<br>
+                      <span class="font-semibold text-slate-800 dark:text-slate-100">Result:</span> Provided a single
+  source of truth for monitoring product category growth and sales performance.
+                  </p>
+                  <a href="https://github.com/KANESHK17/BlinkIT_Power_BI_Dashboard" target="_blank" rel="noopener
+  noreferrer"
+                     class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg font-medium
+  hover:bg-indigo-700 transition">
+                     View Technical Case Study <span class="ml-2">→</span>
+                  </a>
+              </div>
 
-</div>
+          </div>
+      </div>
+  </section>
 
-</div>
-</div>
-</section>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="py-20 px-4 bg-slate-100 dark:bg-slate-800">
+      <div class="max-w-3xl mx-auto">
+          <h2 class="text-3xl font-bold mb-12 text-center">Professional Experience</h2>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="py-20 px-4 bg-slate-100 dark:bg-slate-800">
-<div class="max-w-6xl mx-auto">
-<h2 class="text-3xl font-bold mb-10 text-center">Experience</h2>
+          <div class="relative pl-8 border-l-2 border-primary">
+              <div class="absolute -left-2 top-0 w-4 h-4 bg-primary rounded-full"></div>
+              <div class="mb-10">
+                  <p class="text-xl font-bold">Data Analyst Intern — Rubixe AI Solutions</p>
+                  <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">June 2025 – December 2025</p>
 
-<p class="font-bold">Data Analyst Intern — Rubixe AI Solutions</p>
-<p class="text-sm mb-4">June 2025 – December 2025</p>
+                  <ul class="space-y-3">
+                      <li class="flex gap-3">
+                          <span class="text-primary">✔</span>
+                          <span>Developed automated Power BI dashboards tracking <span class="font-semibold">8+ critical
+   business KPIs</span>, reducing manual reporting time by 40%.</span>
+                      </li>
+                      <li class="flex gap-3">
+                          <span class="text-primary">✔</span>
+                          <span>Engineered complex SQL queries to automate data extraction from large-scale databases,
+  increasing reporting accuracy.</span>
+                      </li>
+                      <li class="flex gap-3">
+                          <span class="text-primary">✔</span>
+                          <span>Conducted Exploratory Data Analysis (EDA) to uncover operational inefficiencies and
+  presented insights to senior management.</span>
+                      </li>
+                      <li class="flex gap-3">
+                          <span class="text-primary">✔</span>
+                          <span>Collaborated with cross-functional teams to define data requirements and translate
+  business needs into technical specifications.</span>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </section>
 
-<ul class="list-disc pl-6">
-<li>Built dashboards tracking 8+ KPIs</li>
-<li>Automated reporting using SQL</li>
-<li>Performed EDA on large datasets</li>
-<li>Generated insights for business decisions</li>
-</ul>
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 text-center">
+      <div class="max-w-2xl mx-auto px-4">
+          <h2 class="text-3xl font-bold mb-6">Let's Connect</h2>
+          <p class="text-lg text-slate-600 dark:text-slate-400 mb-10">
+              I am currently looking for entry-level opportunities in Data Analytics, SQL Development, or Power BI
+  roles.
+          </p>
 
-</div>
-</section>
+          <div class="flex flex-col items-center gap-4">
+              <a href="mailto:kaneshk552@gmail.com" class="text-xl font-semibold text-primary
+  hover:underline">kaneshk552@gmail.com</a>
+              <p class="text-slate-500">+91 8667374718</p>
 
-<!-- CONTACT -->
-<section id="contact" class="py-20 text-center">
-<h2 class="text-3xl font-bold mb-6">Contact</h2>
+              <div class="flex gap-6 mt-6">
+                  <a href="https://github.com/KANESHK17" class="px-4 py-2 bg-slate-200 dark:bg-slate-700 rounded-lg
+  hover:bg-primary hover:text-white transition font-medium">GitHub</a>
+                  <a href="https://linkedin.com/in/kaneshk-pennadam-muralidharan" class="px-4 py-2 bg-slate-200
+  dark:bg-slate-700 rounded-lg hover:bg-primary hover:text-white transition font-medium">LinkedIn</a>
+              </div>
+          </div>
+      </div>
+  </section>
 
-<p>Email: kaneshk552@gmail.com</p>
-<p>Phone: +91 8667374718</p>
+  <footer class="text-center py-10 border-t dark:border-slate-700 text-slate-500 text-sm">
+      © 2026 Kaneshk Pennadam | Built with Tailwind CSS
+  </footer>
 
-<div class="mt-4">
-<a href="https://github.com/KANESHK17">GitHub</a> |
-<a href="https://linkedin.com/in/kaneshk-pennadam-muralidharan">LinkedIn</a>
-</div>
-
-</section>
-
-<footer class="text-center py-6">
-© 2026 Kaneshk
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
+  <script src="script.js"></script>
+  </body>
+  </html>
