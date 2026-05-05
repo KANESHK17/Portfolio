@@ -1,0 +1,13 @@
+/* Custom animations and theme overrides */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.scroll-smooth {
+    scroll-behavior: smooth;
+}
+
+/* Custom profile image glow effect */
+.profile-glow {
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.4);
+}

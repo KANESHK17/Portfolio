@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<<htmlhtml lang="en" class="scroll-smooth">
+<<headhead>
+    <<metameta charset="UTF-8">
+    <<metameta name="viewport" content="width=device-width, initial-scale=1.0">
+    <<titletitle>Kaneshk | Data Analyst Portfolio</title>
+    <<scriptscript src="https://cdn.tailwindcss.com"></script>
+    <<scriptscript>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4f46e5', // Indigo 600
+                        darkBg: '#0f172a', // Slate 900
+                        darkCard: '#1e293b', // Slate 800
+                    }
+                }
+            }
+        }
+    </script>
+    <<linklink rel="stylesheet" href="styles.css">
+</head>
+<<bodybody class="bg-slate-50 text-slate-900 dark:bg-darkBg dark:text-slate-100 transition-colors duration-300">
+
+    <!-- Navigation -->
+    <<navnav class="fixed w-full z-50 backdrop-blur-md bg-white/70 dark:bg-darkBg/70 border-b border-slate-200 dark:border-slate-700">
+        <<divdiv class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <<spanspan class="text-xl font-bold tracking-tight text-primary">Kaneshk.</span>
+
+            <<divdiv class="flex items-center gap-6">
+                <<divdiv class="hidden md:flex gap-6 font-medium">
+                    <<aa href="#about" class="hover:text-primary transition-colors">About</a>
+                    <<aa href="#skills" class="hover:text-primary transition-colors">Skills</a>
+                    <<aa href="#projects" class="hover:text-primary transition-colors">Projects</a>
+                    <<aa href="#contact" class="hover:text-primary transition-colors">Contact</a>
+                </div>
+
+                <!-- Theme Toggle -->
+                <<buttonbutton id="theme-toggle" class="p-2 rounded-lg bg-slate-200 dark:bg-slate-700 hover:ring-2 ring-primary transition-all">
+                    <<spanspan id="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <<sectionsection id="about" class="pt-32 pb-20 px-4">
+        <<divdiv class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <<divdiv class="flex-1 text-center md:text-left">
+                <<hh1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                    Turning Complex Data into <<spanspan class="text-primary">Actionable Insights</span>
+                </h1>
+                <<pp class="text-lg text-slate-600 dark:text-slate-400 mb-8 max-w-2xl">
+                    I am a passionate Data Analyst specializing in transforming raw data into strategic business decisions.
+                    Expertise in Python, SQL, and Power BI to build scalable data pipelines and intuitive visualizations.
+                </p>
+                <<divdiv class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <<aa href="#projects" class="px-8 py-3 bg-primary text-white rounded-full font-semibold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-500/30">View My Work</a>
+                    <<aa href="#contact" class="px-8 py-3 border border-slate-300 dark:border-slate-600 rounded-full font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">Get In Touch</a>
+                </div>
+            </div>
+            <<divdiv class="flex-1 flex justify-center">
+                <<divdiv class="relative">
+                    <<divdiv class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-full blur opacity-30 animate-pulse"></div>
+                    <<imgimg src="profile.jpg" alt="Kaneshk" class="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-white dark:border-slate-700 shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <<sectionsection id="skills" class="py-20 bg-slate-100 dark:bg-slate-800/50 px-4">
+        <<divdiv class="max-w-6xl mx-auto">
+            <<divdiv class="text-center mb-16">
+                <<hh2 class="text-3xl font-bold mb-4">Technical Toolkit</h2>
+                <<divdiv class="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+            </div>
+
+            <<divdiv class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <<divdiv class="p-6 bg-white dark:bg-darkCard rounded-2xl text-center shadow-sm hover:shadow-md transition-all border border-slate-200 dark:border-slate-700">
+                    <<divdiv class="text-3xl mb-3">🐍</div>
+                    <<hh3 class="font-bold">Python</h3>
+                    <<pp class="text-sm text-slate-500">Pandas, NumPy, Matplotlib</p>
+                </div>
+                <<divdiv class="p-6 bg-white dark:bg-darkCard rounded-2xl text-center shadow-sm hover:shadow-md transition-all border border-slate-200 dark:border-slate-700">
+                    <<divdiv class="text-3xl mb-3">🗄️</div>
+                    <<hh3 class="font-bold">SQL</h3>
+                    <<pp class="text-sm text-slate-500">Advanced Querying & Optimization</p>
+                </div>
+                <<divdiv class="p-6 bg-white dark:bg-darkCard rounded-2xl text-center shadow-sm hover:shadow-md transition-all border border-slate-200 dark:border-slate-700">
+                    <<divdiv class="text-3xl mb-3">📊</div>
+                    <<hh3 class="font-bold">Power BI / Tableau</h3>
+                    <<pp class="text-sm text-slate-500">Dynamic Dashboarding</p>
+                </div>
+                <<divdiv class="p-6 bg-white dark:bg-darkCard rounded-2xl text-center shadow-sm hover:shadow-md transition-all border border-slate-200 dark:border-slate-700">
+                    <<divdiv class="text-3xl mb-3">📈</div>
+                    <<hh3 class="font-bold">Data Analysis</h3>
+                    <<pp class="text-sm text-slate-500">Statistical Modeling & Insights</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <<sectionsection id="projects" class="py-20 px-4">
+        <<divdiv class="max-w-6xl mx-auto">
+            <<divdiv class="text-center mb-16">
+                <<hh2 class="text-3xl font-bold mb-4">Featured Projects</h2>
+                <<divdiv class="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+            </div>
+
+            <<divdiv class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <<divdiv class="group p-6 bg-white dark:bg-darkCard rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm hover:border-primary transition-all">
+                    <<divdiv class="flex justify-between items-start mb-4">
+                        <<hh3 class="text-xl font-bold group-hover:text-primary transition-colors">Hospital Management System</h3>
+                        <<spanspan class="px-3 py-1 text-xs font-medium bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-300 rounded-full">Python & SQL</span>
+                    </div>
+                    <<pp class="text-slate-600 dark:text-slate-400 mb-6">
+                        Designed and implemented a comprehensive database system to manage patient records, appointment scheduling, and billing.
+                        Focused on reducing data redundancy and improving retrieval speed.
+                    </p>
+                    <<divdiv class="flex gap-4">
+                        <<aa href="#" class="text-sm font-semibold text-primary flex items-center gap-1 hover:underline">
+                            View Code <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <<divdiv class="group p-6 bg-white dark:bg-darkCard rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm hover:border-primary transition-all">
+                    <<divdiv class="flex justify-between items-start mb-4">
+                        <<hh3 class="text-xl font-bold group-hover:text-primary transition-colors">Zomato Data Analysis</h3>
+                        <<spanspan class="px-3 py-1 text-xs font-medium bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-300 rounded-full">Power BI / Python</span>
+                    </div>
+                    <<pp class="text-slate-600 dark:text-slate-400 mb-6">
+                        Analyzed restaurant performance and customer sentiment across multiple cities.
+                        Built an interactive dashboard identifying key growth opportunities and pricing trends.
+                    </p>
+                    <<divdiv class="flex gap-4">
+                        <<aa href="#" class="text-sm font-semibold text-primary flex items-center gap-1 hover:underline">
+                            View Analysis <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <<sectionsection id="contact" class="py-20 bg-slate-100 dark:bg-slate-800/50 px-4">
+        <<divdiv class="max-w-4xl mx-auto text-center">
+            <<hh2 class="text-3xl font-bold mb-8">Let's Connect</h2>
+            <<divdiv class="flex justify-center gap-8">
+                <<aa href="mailto:your-email@example.com" class="p-4 bg-white dark:bg-darkCard rounded-2xl shadow-sm hover:scale-110 transition-all border border-slate-200 dark:border-slate-700">
+                    📧 Email
+                </a>
+                <<aa href="https://linkedin.com/in/yourprofile" class="p-4 bg-white dark:bg-darkCard rounded-2xl shadow-sm hover:scale-110 transition-all border border-slate-200 dark:border-slate-700">
+                    💼 LinkedIn
+                </a>
+                <<aa href="https://github.com/yourprofile" class="p-4 bg-white dark:bg-darkCard rounded-2xl shadow-sm hover:scale-110 transition-all border border-slate-200 dark:border-slate-700">
+                    💻 GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <<footerfooter class="py-10 text-center text-slate-500 text-sm border-t border-slate-200 dark:border-slate-700">
+        © 2026 Kaneshk. All rights reserved.
+    </footer>
+
+    <<scriptscript src="script.js"></script>
+</body>
+</html>
