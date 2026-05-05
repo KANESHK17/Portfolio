@@ -1,175 +1,182 @@
 <!DOCTYPE html>
-<<htmlhtml lang="en" class="scroll-smooth">
-<<headhead>
-    <<metameta charset="UTF-8">
-    <<metameta name="viewport" content="width=device-width, initial-scale=1.0">
-    <<titletitle>Kaneshk | Data Analyst Portfolio</title>
-    <<scriptscript src="https://cdn.tailwindcss.com"></script>
-    <<scriptscript>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaneshk | Data Analyst Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
         tailwind.config = {
             darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
-                        primary: '#4f46e5', // Indigo 600
-                        darkBg: '#0f172a', // Slate 900
-                        darkCard: '#1e293b', // Slate 800
+                        primary: '#4f46e5',
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
                     }
                 }
             }
         }
     </script>
-    <<linklink rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
-<<bodybody class="bg-slate-50 text-slate-900 dark:bg-darkBg dark:text-slate-100 transition-colors duration-300">
 
-    <!-- Navigation -->
-    <<navnav class="fixed w-full z-50 backdrop-blur-md bg-white/70 dark:bg-darkBg/70 border-b border-slate-200 dark:border-slate-700">
-        <<divdiv class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-            <<spanspan class="text-xl font-bold tracking-tight text-primary">Kaneshk.</span>
+<body class="bg-slate-50 text-slate-900 dark:bg-darkBg dark:text-slate-100 transition-colors duration-300">
 
-            <<divdiv class="flex items-center gap-6">
-                <<divdiv class="hidden md:flex gap-6 font-medium">
-                    <<aa href="#about" class="hover:text-primary transition-colors">About</a>
-                    <<aa href="#skills" class="hover:text-primary transition-colors">Skills</a>
-                    <<aa href="#projects" class="hover:text-primary transition-colors">Projects</a>
-                    <<aa href="#contact" class="hover:text-primary transition-colors">Contact</a>
-                </div>
+<!-- NAV -->
+<nav class="fixed w-full z-50 backdrop-blur-md bg-white/70 dark:bg-darkBg/70 border-b">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+        <span class="text-xl font-bold text-primary">Kaneshk.</span>
 
-                <!-- Theme Toggle -->
-                <<buttonbutton id="theme-toggle" class="p-2 rounded-lg bg-slate-200 dark:bg-slate-700 hover:ring-2 ring-primary transition-all">
-                    <<spanspan id="theme-icon">🌙</span>
-                </button>
+        <div class="flex items-center gap-6">
+            <div class="hidden md:flex gap-6 font-medium">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
             </div>
+
+            <button id="theme-toggle" class="p-2 rounded bg-slate-200 dark:bg-slate-700">
+                <span id="theme-icon">🌙</span>
+            </button>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <!-- Hero Section -->
-    <<sectionsection id="about" class="pt-32 pb-20 px-4">
-        <<divdiv class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-            <<divdiv class="flex-1 text-center md:text-left">
-                <<hh1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-                    Turning Complex Data into <<spanspan class="text-primary">Actionable Insights</span>
-                </h1>
-                <<pp class="text-lg text-slate-600 dark:text-slate-400 mb-8 max-w-2xl">
-                    I am a passionate Data Analyst specializing in transforming raw data into strategic business decisions.
-                    Expertise in Python, SQL, and Power BI to build scalable data pipelines and intuitive visualizations.
-                </p>
-                <<divdiv class="flex flex-wrap justify-center md:justify-start gap-4">
-                    <<aa href="#projects" class="px-8 py-3 bg-primary text-white rounded-full font-semibold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-500/30">View My Work</a>
-                    <<aa href="#contact" class="px-8 py-3 border border-slate-300 dark:border-slate-600 rounded-full font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">Get In Touch</a>
-                </div>
-            </div>
-            <<divdiv class="flex-1 flex justify-center">
-                <<divdiv class="relative">
-                    <<divdiv class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-full blur opacity-30 animate-pulse"></div>
-                    <<imgimg src="profile.jpg" alt="Kaneshk" class="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-white dark:border-slate-700 shadow-2xl">
-                </div>
-            </div>
+<!-- HERO -->
+<section id="about" class="pt-32 pb-20 px-4">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+
+        <div class="flex-1">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6">
+                Data Analyst | SQL · Power BI · Python
+            </h1>
+
+            <p class="text-lg mb-6">
+                Transforming raw data into business-ready insights through end-to-end analytics — from data cleaning and modeling to KPI dashboards and visualization.
+            </p>
+
+            <p class="text-slate-600 dark:text-slate-400 mb-8">
+                Certified Data Analyst with hands-on experience across banking, insurance, startup, and job-market datasets. Skilled in SQL, Python, and Power BI to independently extract, analyze, and present data for decision-making.
+            </p>
+
+            <a href="#projects" class="px-6 py-3 bg-primary text-white rounded">View Projects</a>
         </div>
-    </section>
 
-    <!-- Skills Section -->
-    <<sectionsection id="skills" class="py-20 bg-slate-100 dark:bg-slate-800/50 px-4">
-        <<divdiv class="max-w-6xl mx-auto">
-            <<divdiv class="text-center mb-16">
-                <<hh2 class="text-3xl font-bold mb-4">Technical Toolkit</h2>
-                <<divdiv class="h-1 w-20 bg-primary mx-auto rounded-full"></div>
-            </div>
-
-            <<divdiv class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <<divdiv class="p-6 bg-white dark:bg-darkCard rounded-2xl text-center shadow-sm hover:shadow-md transition-all border border-slate-200 dark:border-slate-700">
-                    <<divdiv class="text-3xl mb-3">🐍</div>
-                    <<hh3 class="font-bold">Python</h3>
-                    <<pp class="text-sm text-slate-500">Pandas, NumPy, Matplotlib</p>
-                </div>
-                <<divdiv class="p-6 bg-white dark:bg-darkCard rounded-2xl text-center shadow-sm hover:shadow-md transition-all border border-slate-200 dark:border-slate-700">
-                    <<divdiv class="text-3xl mb-3">🗄️</div>
-                    <<hh3 class="font-bold">SQL</h3>
-                    <<pp class="text-sm text-slate-500">Advanced Querying & Optimization</p>
-                </div>
-                <<divdiv class="p-6 bg-white dark:bg-darkCard rounded-2xl text-center shadow-sm hover:shadow-md transition-all border border-slate-200 dark:border-slate-700">
-                    <<divdiv class="text-3xl mb-3">📊</div>
-                    <<hh3 class="font-bold">Power BI / Tableau</h3>
-                    <<pp class="text-sm text-slate-500">Dynamic Dashboarding</p>
-                </div>
-                <<divdiv class="p-6 bg-white dark:bg-darkCard rounded-2xl text-center shadow-sm hover:shadow-md transition-all border border-slate-200 dark:border-slate-700">
-                    <<divdiv class="text-3xl mb-3">📈</div>
-                    <<hh3 class="font-bold">Data Analysis</h3>
-                    <<pp class="text-sm text-slate-500">Statistical Modeling & Insights</p>
-                </div>
-            </div>
+        <div>
+            <img src="profile.jpg" class="w-64 h-64 rounded-full object-cover">
         </div>
-    </section>
 
-    <!-- Projects Section -->
-    <<sectionsection id="projects" class="py-20 px-4">
-        <<divdiv class="max-w-6xl mx-auto">
-            <<divdiv class="text-center mb-16">
-                <<hh2 class="text-3xl font-bold mb-4">Featured Projects</h2>
-                <<divdiv class="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-20 px-4 bg-slate-100 dark:bg-slate-800">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-10 text-center">Technical Skills</h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <div>
+                <h3 class="font-bold">Programming & Query</h3>
+                <p>SQL, Python (Pandas, NumPy, Matplotlib, Seaborn)</p>
             </div>
 
-            <<divdiv class="grid md:grid-cols-2 gap-8">
-                <!-- Project 1 -->
-                <<divdiv class="group p-6 bg-white dark:bg-darkCard rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm hover:border-primary transition-all">
-                    <<divdiv class="flex justify-between items-start mb-4">
-                        <<hh3 class="text-xl font-bold group-hover:text-primary transition-colors">Hospital Management System</h3>
-                        <<spanspan class="px-3 py-1 text-xs font-medium bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-300 rounded-full">Python & SQL</span>
-                    </div>
-                    <<pp class="text-slate-600 dark:text-slate-400 mb-6">
-                        Designed and implemented a comprehensive database system to manage patient records, appointment scheduling, and billing.
-                        Focused on reducing data redundancy and improving retrieval speed.
-                    </p>
-                    <<divdiv class="flex gap-4">
-                        <<aa href="#" class="text-sm font-semibold text-primary flex items-center gap-1 hover:underline">
-                            View Code <span>&rarr;</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <<divdiv class="group p-6 bg-white dark:bg-darkCard rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm hover:border-primary transition-all">
-                    <<divdiv class="flex justify-between items-start mb-4">
-                        <<hh3 class="text-xl font-bold group-hover:text-primary transition-colors">Zomato Data Analysis</h3>
-                        <<spanspan class="px-3 py-1 text-xs font-medium bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-300 rounded-full">Power BI / Python</span>
-                    </div>
-                    <<pp class="text-slate-600 dark:text-slate-400 mb-6">
-                        Analyzed restaurant performance and customer sentiment across multiple cities.
-                        Built an interactive dashboard identifying key growth opportunities and pricing trends.
-                    </p>
-                    <<divdiv class="flex gap-4">
-                        <<aa href="#" class="text-sm font-semibold text-primary flex items-center gap-1 hover:underline">
-                            View Analysis <span>&rarr;</span>
-                        </a>
-                    </div>
-                </div>
+            <div>
+                <h3 class="font-bold">BI & Reporting</h3>
+                <p>Power BI, DAX, Power Query, Tableau</p>
             </div>
+
+            <div>
+                <h3 class="font-bold">Data Analysis</h3>
+                <p>EDA, Data Cleaning, Transformation, KPI Analysis</p>
+            </div>
+
+            <div>
+                <h3 class="font-bold">Data Engineering</h3>
+                <p>ETL Pipelines, Data Modeling, Orange Tool</p>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <<sectionsection id="contact" class="py-20 bg-slate-100 dark:bg-slate-800/50 px-4">
-        <<divdiv class="max-w-4xl mx-auto text-center">
-            <<hh2 class="text-3xl font-bold mb-8">Let's Connect</h2>
-            <<divdiv class="flex justify-center gap-8">
-                <<aa href="mailto:your-email@example.com" class="p-4 bg-white dark:bg-darkCard rounded-2xl shadow-sm hover:scale-110 transition-all border border-slate-200 dark:border-slate-700">
-                    📧 Email
-                </a>
-                <<aa href="https://linkedin.com/in/yourprofile" class="p-4 bg-white dark:bg-darkCard rounded-2xl shadow-sm hover:scale-110 transition-all border border-slate-200 dark:border-slate-700">
-                    💼 LinkedIn
-                </a>
-                <<aa href="https://github.com/yourprofile" class="p-4 bg-white dark:bg-darkCard rounded-2xl shadow-sm hover:scale-110 transition-all border border-slate-200 dark:border-slate-700">
-                    💻 GitHub
-                </a>
-            </div>
-        </div>
-    </section>
+<!-- PROJECTS -->
+<section id="projects" class="py-20 px-4">
+<div class="max-w-6xl mx-auto">
+<h2 class="text-3xl font-bold mb-10 text-center">Projects</h2>
 
-    <<footerfooter class="py-10 text-center text-slate-500 text-sm border-t border-slate-200 dark:border-slate-700">
-        © 2026 Kaneshk. All rights reserved.
-    </footer>
+<div class="grid md:grid-cols-2 gap-8">
 
-    <<scriptscript src="script.js"></script>
+<div class="p-6 bg-white rounded shadow">
+<h3 class="font-bold">Bank Loan Analysis</h3>
+<p>Analyzed 38,576 loan records and generated 10+ KPIs using SQL. Built Power BI dashboards and performed risk analysis on $435M dataset.</p>
+</div>
+
+<div class="p-6 bg-white rounded shadow">
+<h3 class="font-bold">Job Market Analysis</h3>
+<p>Analyzed 700,000+ job records to identify salary trends, skill demand, and regional insights using Python and Power BI.</p>
+</div>
+
+<div class="p-6 bg-white rounded shadow">
+<h3 class="font-bold">Startup Profit Analysis</h3>
+<p>Built regression model with ~94% accuracy and analyzed startup ROI using SQL and Power BI dashboards.</p>
+</div>
+
+<div class="p-6 bg-white rounded shadow">
+<h3 class="font-bold">Insurance Complaint Analysis</h3>
+<p>Analyzed insurer performance and complaint trends using SQL and built KPI dashboards.</p>
+</div>
+
+<div class="p-6 bg-white rounded shadow">
+<h3 class="font-bold">Blink-It Sales Dashboard</h3>
+<p>Built ETL pipelines and dashboards to track revenue, orders, and product performance.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="py-20 px-4 bg-slate-100 dark:bg-slate-800">
+<div class="max-w-6xl mx-auto">
+<h2 class="text-3xl font-bold mb-10 text-center">Experience</h2>
+
+<p class="font-bold">Data Analyst Intern — Rubixe AI Solutions</p>
+<p class="text-sm mb-4">June 2025 – December 2025</p>
+
+<ul class="list-disc pl-6">
+<li>Built dashboards tracking 8+ KPIs</li>
+<li>Automated reporting using SQL</li>
+<li>Performed EDA on large datasets</li>
+<li>Generated insights for business decisions</li>
+</ul>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 text-center">
+<h2 class="text-3xl font-bold mb-6">Contact</h2>
+
+<p>Email: kaneshk552@gmail.com</p>
+<p>Phone: +91 8667374718</p>
+
+<div class="mt-4">
+<a href="https://github.com/KANESHK17">GitHub</a> |
+<a href="https://linkedin.com/in/kaneshk-pennadam-muralidharan">LinkedIn</a>
+</div>
+
+</section>
+
+<footer class="text-center py-6">
+© 2026 Kaneshk
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
